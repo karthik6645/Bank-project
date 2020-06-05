@@ -1,0 +1,18 @@
+sup{
+    color:red;
+}
+#submit,#backButton{
+    border-radius: 5px;
+}
+textarea{
+    
+    width:150px;height: 50px;
+}
+h3{
+    background-color: royalblue;
+}
+label{
+    display: inline-block;
+    width: 240px;
+    text-align: right;
+}

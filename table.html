@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div id="accDetails">
+        <table id="tableFirst">
+            <tr>
+                <th class="accDetalisTableCell" style="text-align: left;padding-left:20px;">AccNo/Name</span> </th>
+                <th class="accDetalisTableCell" style="text-align: left;padding-left:20px;">Branch</th>
+                <th class="accDetalisTableCell" style="text-align: left;padding-left:20px;">Available Balance</th>
+            </tr>
+            <tr>
+                <td  class="accDetalisTableCell" style="text-align: left;padding-left:20px;"> 416513215612156</td>
+                <td class="accDetalisTableCell" style="text-align: left;padding-left:20px;"> Koramangala</td>
+                <td class="accDetalisTableCell"id="balanceClick" onclick="displayBalance()" >Click here for balance</td>
+            </tr>
+        </table>
+    </div>
+    <button id="depositbtn" onclick="dispalyDepositf()" >Deposit</button>
+    <button id="withdrawbtn" onclick="displayWithdrawf()">Withdraw</button>
+    <div id="deposit">
+        <table>
+            <tr>
+                <td class="floatLeft">Description</td>
+                <td class="floatLeft"><input type="text" id="depositDescription" placeholder="Optional"></td>
+            </tr>
+            <tr>
+                <td class="floatLeft">Deposit <br> amount</td>
+                <form>
+                <td class="floatLeft"><input type="number"  id="enteredDeposit" required></td></form>
+            </tr>
+    
+        </table>
+        <button id="depositProceed" onclick="return addrowDeposit()">Proceed</button>
+        <div id="depositVerify"> <span >hi deposit</span></div>
+    </div>
+   
+    <div id="withdraw">
+        <table>
+            <tr>
+                <td class="floatLeft" >Description</td>
+                <td class="floatLeft"><input type="text" id="withdrawDescription" placeholder="Optional"></td>
+            </tr>
+            <tr>
+                <td class="floatLeft">Withdraw <br> amount</td>
+                <form>
+                <td class="floatLeft"><input type="number"  id="enteredWithdraw" required></td></form>
+            </tr>
+    
+        </table>
+        <button id="withdrawProceed" onclick="return addrowWithdraw()">Proceed</button>
+        <div id="withdrawVerify"> <span >hi withdraw</span></div>
+    </div>
+  
+    <div id="table" >
+        <table >
+            <tr>
+                <th class="th">SNo.</td>
+                <th class="th">Date</th>
+                <th class="th">Particulars</th>
+                <th class="th">Debit</th>
+                <th class="th">Credit</th>
+                <th class="th">Balance</th>
+            </tr>
+        </table >
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+  <link rel="stylesheet" href="LogIn.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+</head>
+<body><div id="outer">
+    <div id="rightSide"><center>
+        <h1>New here?</h1>
+        <p id="text"><b>Signup and become <br> a brilliance family member</b></p>
+        <button id="signUpbtn" ><a href="SignUp.html" style="text-decoration: none;">SignUp</a></button>
+    </center>
+    </div>
+    <script src="LogInValidation.js"></script>
+    <div id="leftSide">
+        <form onsubmit="return validate()"action="dashboard.html">
+            <center id="center">
+            <h1 id="wel" >Welcome back</h1><br><br>
+       <input type="text" id="userName" placeholder="Username" onkeyup="userNamef()"required ><br><span id="userNameVerify" ></span><br><br><br>
+        &nbsp;<input type="password" id="passwordInLogin" placeholder="Password" onkeyup="passwordf()" required><br><span id="passwordInVerify"></span><br><br><br>
+        <input id="remember" type="checkbox"><span>Remember me</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="" id="a">Forgotten account? </a><br><br>
+        <input id="submitbtn" value="Log In"class="btn"type="submit"><br>
+        
+    </center>
+    </form>
+    <script src="LogInValidation.js"></script>
+    </div>
+</div>
+</body>
+
+</html>

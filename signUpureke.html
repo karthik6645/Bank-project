@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="signUpurek.css">
+    <title>SignUpurkr</title>
+</head>
+<body>
+    <form  onsubmit= "return passowrd(); return login()" action="https://www.google.com">
+            <h3>Login Particulars</h3>
+            <label>Login id<sup>*</sup></label>&nbsp;<input type="text" id="logIn1" required onsubmit="return login()" onkeyup="login()"><span id="logInVerify"></span><br><br>
+            <label>Password<sup>*</sup></label>&nbsp;<input type="password" id="password" onsubmit="return passowrd()" required onkeyup="passowrd()"><span id="passwordVerify"></span>
+            <progress max="100" value="10" id="progress" style="height:8px;"></progress><br><br>
+            <input type="submit">
+    </form>
+   </body>
+<script src="signupu.js"></script>
+</html>

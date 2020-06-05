@@ -1,0 +1,93 @@
+header{
+
+    width: 100%;
+    height:100px;
+   }
+   #bankName{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+   #sub{
+       font-size: 20px;
+   }
+   nav{
+   
+       border-radius: 10px;
+       background-color: lightblue;
+       width: 100%;
+       height:100px;
+   }
+   
+   .btn{
+       color: white;
+       font-size: 18px;
+       height: 40px;
+       width: 100px;
+       background-color: orangered;
+     margin-top: 25px;
+       border-radius: 5px;
+       margin-left: 50px;
+   }
+   .btn:hover{
+       color: white;
+       background-color: limegreen;
+    
+   }
+   #logOut{
+       margin-left: 200px;
+       font-size: 18px;
+       height: 40px;
+       width: 100px;
+       color: white;
+       background-color: blue;
+       border-radius: 5px;
+   }
+   #section{
+       margin-top: -15px;
+background-color: lightgoldenrodyellow;
+       width: 20%;
+       height: 410px;
+  
+   }
+   .sectiona{
+     margin-left: 25px;
+
+       text-decoration: none;
+   }
+   .sectiona:hover{
+       color: red;
+       text-decoration: underline;
+   }
+  
+   aside{
+   
+    width: 80%;
+    height: 410px;
+    margin-left: 20%;
+    margin-top: -412px;
+  }
+  iframe{
+      height: 410px;
+      width: 100%;
+  }
+   #footer{
+      
+      width: 100%;
+      height: 100px;
+    background-color: black;
+}
+#footerLast{
+    color: white;
+}
+#rights{
+    float:right;
+}
+.footera{
+    color: white;
+    text-decoration: none;
+}
+.footera:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+   

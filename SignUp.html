@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css"> -->   
+    <link rel="stylesheet" href="SignUp.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <form action="Login.html" name="form"  onsubmit="return validate()">
+        <h3>Login Particulars</h3>
+        <label>Login id<sup>*</sup></label>&nbsp;<input type="text" id="logIn2" required  onkeyup="login()"><span id="logInVerify"></span><br><br>
+        <label>Password<sup>*</sup></label>&nbsp;<input type="password" id="password" required onkeyup="passowrd()"><span id="passwordVerify"></span>
+        <progress max="100" value="10" id="progress" style="height:8px;"></progress><br><br>
+        <label>Confirm password</label>&nbsp;<input type="password" id="confirmPassword" required onkeyup="conPassword()"><span id="confirmPasswordVerify"></span><br><br>
+        <script src="LogInValidation.js"></script>
+        <h3>Personal particulars</h3>
+        <label>Title</label><select>
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Mx.</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label>First name<sup >*</sup></label>&nbsp;<input id="firstName" onkeyup="fsVerify()" required><span id="fsVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label>Middle name:&nbsp;</label><input id="middleName" placeholder="Optional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+      <label>Last name<sup >*</sup></label>&nbsp;<input id="lastName"  required ><span id="lsVerify"></span><br><br>
+      <label>Gender</label><sup >*</sup><br><label style="width:100px;margin-left: 140px;">Male</label>&nbsp;<input type="radio" name="radio" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label style="width:100px">Female</label>&nbsp;<input type="radio" name="radio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <label style="width:100px">Others</label>&nbsp;<input type="radio" name="radio"><br><br>
+       <label>Email<sup >*</sup></label>&nbsp;<input type="email" id="email" onkeyup="email1()" required><span id="emailVerify"></span><br><br>
+       <label>Phone number<sup >*</sup></label>&nbsp;<input type="number" id="phoneNumber" onkeyup="phoneval()" required><span id="phVerify"></span><br><br>
+       <label>Date of Birth<sup >*</sup></label>&nbsp;<input type="date" id="dob" oninput="dobf()" required><span id="dobVerify"></span><br><br>
+       <label>Mother name<sup >*</sup></label>&nbsp;<input type="text" id="motherName" onkeyup="mnVerify()"required><span id="motherNameVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label> Mother's occupation</label>&nbsp;<input type="text" id="motherOccupation" placeholder="Optional"><span id="motherOccupationVerify"></span><br><br>
+      <label>Father name<sup >*</sup></label>&nbsp;<input type="text" id="fatherName"onkeyup="fnVerify()"required><span id="fatherNameVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label> Father's occupation</label>&nbsp;<input type="text" id="fatherOccupation" placeholder="Optional"><span id="fatherOccupationVerify"></span><br><br>
+      <label> PAN number<sup >*</sup></label>&nbsp;<input type="text" id="panNumber" onkeyup="panVerify()" required><span id="panVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label> Upload file</label><input type="file" id="panFile"><br><br>
+      <label> Aadhar number<sup >*</sup></label>&nbsp;<input type="number" id="aadhar" onkeyup="aadharf1()" required><span id="aadhaarVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label> Upload file</label><input type="file" id="addhaarFile"><br><br>
+      <label>Address for correspondence<sup >*</sup></label>&nbsp;<textarea type="text" id="addressCor" required></textarea><span id="addressCorVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp;       <label>Permanent address<sup >*</sup></label>&nbsp;<textarea type="text" id="PreAddress" required></textarea><span id="preAddressVerify"></span><br><br>
+<p style="margin-left: 250px;"><input type="checkbox" id="copy" name="checkbox2" onclick="copy2()">If permanent address is same as correspondence address</p> <label>State<sup >*</sup></label>&nbsp;<select>
+                    <option>Andhra Pradesh</option>
+                  <option>Karnataka</option>
+                  <option>Tamil Nadu</option>
+                  <option>Kerela</option>
+                  <option>Maharasthtra</option>
+                  </select>
+                  <label> Pin Code<sup >*</sup></label>&nbsp;<input type="number" id="pincode" onkeyup="pinf()"><span id="pinCodeVerify"></span><br><br>
+       <h3>Professional particulars</h3>
+       <label>Company name<sup >*</sup></label>&nbsp;<input type="text" id="companyName" onkeyup="companyNamef()" required><span id="companyNameVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <label>Designation<sup >*</sup></label>&nbsp;<input type="text" id="designation" required><span id="designationVerify"></span><br><br>
+       <label>Company address</label>&nbsp;<textarea id="comAddress" placeholder="Optional"></textarea><span id="companyAddressVerify"></span><br><br>
+       <label>Annual CTC<sup >*</sup></label>&nbsp;<input type="number" placeholder="in L.p.a" id="annualCTC" required><span id="annualCTCVerify"></span><br><br>
+       <h3>Nominee particulars</h3>
+       <label> Nominee relation<sup >*</sup></label>&nbsp;<select>
+                      <option>Father</option>
+                      <option>Mother</option>
+                      <option>Sister</option>
+                      <option>Broher</option>
+                      <option>Wife</option>
+                      <option>Husband</option>
+                      <option>Guardian/Others</option>
+                     </select><br><br>
+                     <label>Title</label><select>
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Mx.</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>First name<sup >*</sup></label>&nbsp;<input id="nomineetName" onkeyup="nomineef()" required ><span id="nomineeVerify"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Last name<sup >*</sup></label>&nbsp;<input id="nomineelastName" required ><span id="lsVerify"></span><br><br>
+        <label>Occupation</label>&nbsp;<input type="text" id="nomineeOccupation"placeholder="Optional"><span id="nomineeOccupationVerify"></span><br><br>
+        <label>Nominee address<sup >*</sup></label>&nbsp;<textarea id="nomineeAddress" required></textarea><span id="nomineeAddressVerify"></span><br><br>
+        <label>Gender<sup >*</sup></label><br> <label style="width:100px;margin-left: 140px;">Male</label>&nbsp;<input type="radio" name="radio1" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="width:100px;"> Female</label>&nbsp;<input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="width:100px;">Others</label>&nbsp;<input type="radio" name="radio1"><br><br>
+        <label> Email<sup >*</sup></label>&nbsp;<input type="email" id="nomineeemail" required><span id="nomineeEmailVerify"></span><br><br>
+        <label> Phone number<sup >*</sup></label>&nbsp;<input type="number" id="nomineePhoneNo" onkeyup="nomineePhonef()" required><span id="phVerify1"></span><br><br><br>
+       <input type="checkbox" id="checkBox" required>
+  <b><q>I hereby declare that all the information submitted by me in the application form is correct, true and valid. I will present the supporting documents as and when required.</q></b><br><br>
+  <button id="backButton" ><a href="HomePage.html" style="text-decoration: none;color: black;">Back</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" value="SignUp" id="submit">
+    </form>
+</body>
+<script src="signUp.js"></script>
+</html>
